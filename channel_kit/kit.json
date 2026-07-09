@@ -1,0 +1,67 @@
+{
+  "nomes": [
+    {
+      "nome": "Arquivo Sombrio",
+      "handle": "@ArquivoSombrio",
+      "porque": "Sugere um acervo de segredos e mistérios ocultos que serão revelados."
+    },
+    {
+      "nome": "Vozes do Além",
+      "handle": "@VozesDoAlem",
+      "porque": "Implica histórias e testemunhos de casos reais que ecoam além do tempo."
+    },
+    {
+      "nome": "Enigmas Reais",
+      "handle": "@EnigmasReais",
+      "porque": "Direto e claro, foca em mistérios e quebra-cabeças baseados em fatos."
+    },
+    {
+      "nome": "Desvendando Fatos",
+      "handle": "@DesvendandoFatos",
+      "porque": "Transmite a proposta de investigação e revelação da verdade por trás dos mistérios."
+    },
+    {
+      "nome": "Canto Obscuro",
+      "handle": "@CantoObscuro",
+      "porque": "Cria uma atmosfera de suspense, convidando a explorar os lados mais sombrios da realidade."
+    }
+  ],
+  "descricao": "Prepare-se para mergulhar nos mais intrigantes mistérios reais, casos criminais sem solução e fenômenos inexplicáveis que desafiam a lógica. No Arquivo Sombrio, desvendamos verdades ocultas e exploramos o lado sombrio da existência humana e do mundo. Com análises profundas e narrativas envolventes, trazemos à tona o que muitos preferem esquecer, semanalmente.\n\nNão fique no escuro: inscreva-se agora e ative o sino para não perder nenhum episódio dessa jornada pelo desconhecido!",
+  "keywords": [
+    "mistérios reais",
+    "casos criminais",
+    "true crime",
+    "fenômenos inexplicáveis",
+    "teorias da conspiração",
+    "lendas urbanas",
+    "assassinatos",
+    "desaparecimentos",
+    "crimes não resolvidos",
+    "psicopatas",
+    "serial killers",
+    "histórias de terror",
+    "sobrenatural",
+    "enigmas",
+    "documentários",
+    "investigação",
+    "curiosidades sinistras",
+    "mistérios sem solução"
+  ],
+  "logo_prompt": "Minimalist flat icon, high contrast, symbolic of mystery and real cases. A stylized magnifying glass over a subtle question mark, or a keyhole revealing a glimpse of an eye. Dark background, no text. Clean lines, legible at small sizes (98x98px). Black and white or very dark muted colors like deep crimson and charcoal.",
+  "banner_prompt": "Cinematic YouTube banner, atmospheric and mysterious. A dark, foggy forest at dusk, or a silhouette standing before an old, dimly lit abandoned building. Focus on a clean central area for channel name/slogan. High contrast, deep shadows, subtle hints of desaturated blues and grays, with a touch of deep crimson. No text in the image itself.",
+  "trailer_ideia": "Trailer de 30 segundos: Inicia com uma montagem rápida e pulsante de imagens icônicas de mistério (fita de cena de crime, fotos antigas, figuras sombrias, florestas densas, olhos observando na escuridão). Uma voz profunda e calma faz perguntas instigantes: 'O que se esconde nas sombras? O que a verdade nos revela? Você está pronto para ver o que realmente aconteceu?'. Transições rápidas entre diferentes tipos de casos (crime, sobrenatural, inexplicável). Música atmosférica e crescente. Finaliza com o logo e nome do canal em destaque, seguido de um CTA rápido: 'Arquivo Sombrio. Semanalmente. Inscreva-se.'.",
+  "checklist": [
+    "1. Criar Conta Google dedicada ao canal.",
+    "2. Criar Canal YouTube (Conta de Marca para flexibilidade).",
+    "3. Definir Handle (@NomeDoCanal) exclusivo e memorável.",
+    "4. Fazer upload do Avatar (Logo) e Banner do canal (conforme prompts).",
+    "5. Preencher Descrição do Canal com SEO e palavras-chave relevantes.",
+    "6. Configurar Padrões de Upload (descrição padrão, tags base para novos vídeos).",
+    "7. Criar 3-5 Playlists temáticas iniciais para organizar conteúdo (mesmo que vazias).",
+    "8. Planejar Calendário de Conteúdo (cadência de 1 vídeo/semana é ideal para dark channels).",
+    "9. Publicar os primeiros 3-5 vídeos de alta qualidade simultaneamente para dar volume inicial.",
+    "10. Promover o canal em outras redes sociais (Instagram, TikTok) com teasers e snippets.",
+    "11. Monitorar requisitos para o YPP (YouTube Partner Program): 1000 inscritos + 4000 horas de exibição pública (ou 10 milhões de visualizações válidas de Shorts nos últimos 90 dias).",
+    "12. Após atingir os requisitos, solicitar a Parceria com o YouTube e configurar a conta AdSense para monetização."
+  ]
+}

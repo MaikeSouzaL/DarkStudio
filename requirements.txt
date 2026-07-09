@@ -1,0 +1,52 @@
+# DarkStudio - gerador de vídeos IA para canais dark
+# Instale SEMPRE dentro do .venv:  python -m venv .venv  →  .venv\Scripts\pip install -r requirements.txt
+nicegui>=2.11,<3          # UI desktop (modo nativo) em Python puro
+pywebview>=5.1            # janela nativa (Windows/Linux/macOS)
+edge-tts>=7.0             # narração TTS neural gratuita (vozes pt-BR excelentes)
+faster-whisper>=1.1       # "whisper fast": timestamps palavra a palavra (karaokê) + VAD
+google-genai>=1.20        # Gemini (Nano Banana imagens + Veo vídeo + LLM de prompts)
+pillow>=10.0              # processamento de imagem
+python-dotenv>=1.0        # chaves de API via .env
+httpx>=0.27               # cliente HTTP (Pollinations, downloads)
+yt-dlp>=2025.1            # remodelagem: top vídeos + legendas de canais do YouTube
+google-api-python-client>=2.100   # upload direto para o YouTube
+google-auth-oauthlib>=1.2         # OAuth do upload
+imageio-ffmpeg>=0.5       # ffmpeg embutido (fallback quando não há ffmpeg no sistema)
+
+# ---------------- engines TTS locais (pré-instaladas) ----------------
+# Família torch PINADA — o chatterbox exige torch==2.6.0; não mude um sem os outros!
+# Com GPU NVIDIA, o run.bat instala o build CUDA (cu124) automaticamente ANTES
+# destas linhas; sem GPU, o pip resolve o build CPU do PyPI.
+torch==2.6.0
+torchaudio==2.6.0
+torchvision==0.21.0
+nvidia-cublas-cu12; sys_platform == 'win32'   # whisper em GPU sem CUDA Toolkit
+nvidia-cudnn-cu12; sys_platform == 'win32'
+diffusers>=0.32           # geração LOCAL de imagem (SDXL/Z-Image/FLUX) e LTX-Video
+sentencepiece>=0.2        # tokenizer do FLUX/T5
+playwright>=1.49          # Piloto de Navegador (Whisk/Flow) — rode: playwright install chromium
+numpy>=2.2,<2.5           # teto do numba (librosa/resampy)
+scipy>=1.14
+soundfile>=0.12
+qwen-tts>=0.1             # Qwen3-TTS Apache-2.0 (10 idiomas c/ pt, clonagem 3s)
+coqui-tts>=0.24           # XTTS-v2/VITS (XTTS: licença NÃO comercial CPML!)
+kokoro>=0.9               # Kokoro-82M Apache-2.0, leve, roda em CPU
+espeakng-loader>=0.2      # fonemas pt para o Kokoro (espeak-ng embutido)
+piper-tts>=1.3            # Piper levíssimo em CPU (atenção: licença GPL-3.0)
+s3tokenizer               # deps do Chatterbox (instalado à parte, ver nota)
+conformer
+resemble-perth
+diffusers
+# NOTA chatterbox: instale com  pip install --no-deps chatterbox-tts
+# (os pins rígidos dele rebaixariam o transformers e quebrariam o Qwen3-TTS)
+# NOTA gradio: o qwen-tts arrasta o gradio, que conflita com o NiceGUI —
+# rode  pip uninstall -y gradio hf-gradio  após instalar (run.bat já faz isso)
+
+# ------------- limpeza/melhora de voz para clonagem ------------------
+audio-separator>=0.30     # UVR MDX-NET: separa voz de música + modelo UVR-DeNoise
+noisereduce>=3.0          # fallback leve de denoise espectral
+
+# --------- provedores extras (opcionais, ativados por chave no app) --------
+# DeepSeek (LLM reserva), Hugging Face e Together (imagens FLUX grátis) usam só httpx.
+# google-genai já suporta Vertex AI (OAuth via `gcloud auth application-default login`).
+# deepfilternet: sem wheel para py3.12/Windows — o app usa UVR-DeNoise no lugar
